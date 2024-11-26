@@ -1,18 +1,18 @@
-import os
+# Contador de Palavras
 
-def contar_palavras(arquivo):
-    """Conta o número de palavras em um arquivo de texto."""
-    if not os.path.exists(arquivo):
-        print(f"Arquivo '{arquivo}' não encontrado.")
-        return 0
+Este é um projeto simples em Python para contar o número de palavras em um arquivo de texto.
 
-    with open(arquivo, 'r', encoding='utf-8') as f:
-        conteudo = f.read()
+## Estrutura do Projeto
 
-    palavras = conteudo.split()
-    return len(palavras)
+- `contador_palavras.py`: Script principal que contém a lógica do programa.
+- `arquivos/`: Pasta que contém os arquivos de texto de exemplo.
+- `README.md`: Documentação do projeto.
+- `.gitignore`: Arquivo para ignorar arquivos desnecessários no GitHub.
+- `requirements.txt`: Arquivo para dependências, caso necessário.
 
-if __name__ == "__main__":
-    caminho_arquivo = "arquivos/exemplo.txt"
-    total_palavras = contar_palavras(caminho_arquivo)
-    print(f"O arquivo '{caminho_arquivo}' contém {total_palavras} palavras.")
+## Como Usar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/github-alura.git
+   cd github-alura
